@@ -8586,12 +8586,11 @@ header {
   overflow: hidden;
   padding: 1.6rem 0; }
   header h1 {
-    width: 397px;
-    height: 47px;
-    background: url(../img/logo.png) no-repeat;
-    background-size: 397px 47px;
-    text-indent: -9000px;
-    margin: 0; }
+    display: none; }
+  header #logo-img {
+    max-width: 240px;
+    float: left;
+    margin-top: 6px; }
   header nav ul {
     margin: 0;
     padding: 0; }
@@ -8626,7 +8625,11 @@ header {
       margin-bottom: 0; }
   #home-slide .button {
     background: #ffc107;
-    color: #212121; }
+    color: #212121;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); }
 
 #client-types {
   clear: both;
