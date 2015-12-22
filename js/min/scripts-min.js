@@ -1,1 +1,0 @@
-$(document).foundation(),$(function(){$("#home-slide ul").slick({prevArrow:"#hero-prev",nextArrow:"#hero-next",autoplay:!0,autoplaySpeed:5e3})});
