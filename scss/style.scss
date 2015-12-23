@@ -5,7 +5,8 @@
 @import 'motion-ui';
 
 @include foundation-global-styles;
-@include foundation-grid;
+// @include foundation-grid;
+@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -40,5 +41,96 @@
 @include foundation-tooltip;
 @include foundation-top-bar;
 
-@include motion-ui-transitions;
-@include motion-ui-animations;
+@import "../bower_components/animate.css/animate.min.css";
+
+// Start of human code!
+
+body { background: #145ea8; }
+
+header {
+	background: #fff;
+	padding: 2em 0;
+	@include mui-fade(in);
+
+	img { width: 100%; max-width: 397px; }
+
+	nav {
+
+		ul {
+			margin-top: .125rem;
+
+			li {
+				display: inline-block;
+				list-style: none;
+				font-size: rem-calc(14px);
+				margin-right: rem-calc(16px);
+				&:last-child { margin-right: 0; }
+
+				a {
+					color: $primary-color;
+					&:hover { color: scale-color($primary-color, $lightness: -50%); text-decoration: underline; }
+				}
+			}
+		}
+	}
+}
+
+#tagline {
+	padding: 2rem 0;
+	text-align: center;
+
+	p {
+		color: #fff;
+		font-size: rem-calc(60px);
+		font-weight: 300;
+		margin-bottom: 0;
+
+		&:first-child { font-size: rem-calc(36px); line-height: 1.2; }
+	}
+}
+
+#hero {
+	background: url('../img/hero-bg.jpg') no-repeat center center;
+	background-size: 100%;
+	animation-name: bgscale;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+  animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	text-align: center;
+	padding: 3em 0;
+
+	img { margin: 0; padding: 0; width: 100%; max-width: 673px; }
+}
+
+
+#homepage-content {
+	padding: 3rem 0 0 0;
+
+	h2 { color: #fff; font-size: rem-calc(36px); font-weight: 300; margin-bottom: 3rem; }
+
+	h3 {
+		color: #fff;
+		font-weight: 300;
+	}
+
+	p { color: rgba(255,255,255,.5); margin-bottom: rem-calc(6px); }
+
+	a { display: block; color: #fff; margin-bottom: 3rem; }
+
+}
+
+footer {
+	padding: 2rem 0;
+	background: #212121;
+
+	p { color: #fff; margin: 0; }
+}
+
+// Animations and whatnots
+
+/* The animation code */
+@keyframes bgscale {
+    0%   { background-size: 100%; }
+    100% { background-size: 180%; }
+}
