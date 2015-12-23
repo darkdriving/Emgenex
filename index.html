@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>A better path to the right patient outcomes &nbsp; Emgenex</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,300,700">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,23 +16,31 @@
 			<div class="small-3 columns">
 				<img src="img/logo.png">
 			</div>
-			<nav role="main" class="columns">
-				<ul>
-					<li><a href="#">Business Operations</a></li>
-					<li><a href="#">In-office Diagnostics</a></li>
-					<li><a href="#">Clinical Network</a></li>
-					<li><a href="#">Pharmacogenetics Testing</a></li>
-					<li><a href="#">Rx Compounding</a></li>
-					<li><a href="#">Health IT</a></li>
-				</ul>
-			</nav>
+			<div class="columns text-right">
+				<a href="#" class="nav-toggle">Menu <i class="fa fa-bars"></i></span></a>
+			</div>
 		</div>
 	</header>
 
-	<aside id="tagline" class="row">
-		<div class="columns">
-			<p>Align Clinical Decisions With What Patients Want</p>
-			<p>A Better Path to the Right Outcomes.</p>
+	<nav id="overlay" role="main">
+		<ul>
+			<li><a href="#">Business Operations</a></li>
+			<li><a href="#">In-office Diagnostics</a></li>
+			<li><a href="#">Clinical Network</a></li>
+			<li><a href="#">Pharmacogenetics Testing</a></li>
+			<li><a href="#">Rx Compounding</a></li>
+			<li><a href="#">Health IT</a></li>
+		</ul>
+
+		<a href="#" class="nav-toggle">&times;</a>
+	</nav>
+
+	<aside id="tagline">
+		<div class="row">
+			<div class="columns text-center">
+				<p>Align Clinical Decisions With What Patients Want</p>
+				<p>A Better Path to the Right Outcomes.</p>
+			</div>
 		</div>
 	</aside>
 
@@ -49,7 +58,7 @@
 				<h2>Enter the Era of Better Prescribing and Better Business</h2>
 			</div>
 		</div>
-		<div class="row align-stretch" style="max-width: 960px;">
+		<div class="row align-stretch" style="max-width: 980px;">
 			<div class="columns">
 				<div class="row align-top">
 					<div class="columns shrink"><img src="img/icon-hcp.svg" alt="Providers" style="max-width: 120px; opacity: .6"></div>
@@ -71,7 +80,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row align-stretch" style="max-width: 960px;">
+		<div class="row align-stretch" style="max-width: 980px;">
 			<div class="columns">
 				<div class="row align-top">
 					<div class="columns shrink"><img src="img/icon-health-systems.svg" alt="Health Systems" style="max-width: 120px; opacity: .6"></div>
