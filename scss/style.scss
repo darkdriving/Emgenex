@@ -158,10 +158,79 @@ header {
 	animation-timing-function: ease-in-out;
 	text-align: center;
 	padding: 3em 0;
+	overflow: hidden;
 
-	img { margin: 0; padding: 0; width: 100%; max-width: 673px; }
+	img { margin: 0; padding: 0; width: 100%; max-width: 1200px; }
 }
 
+#hero-alt {
+	background: #333;
+	overflow: hidden;
+
+	& > .row {
+		max-width: 100%;
+
+		.columns {
+			padding: 0;
+			position: relative;
+			max-height: 40vh;
+			overflow: hidden;
+
+			img { opacity: .5; @include transition(opacity 500ms ease); }
+
+			h5 {
+				position: absolute;
+				bottom: .5rem;
+				left: .5rem;
+				color: #fff;
+				font-weight: 100;
+				font-size: rem-calc(36px);
+				margin: 0;
+				padding: 0; }
+
+			&:hover img { opacity: .75; }
+		}
+
+		&:nth-child(1) .columns:nth-child(2) { @include animation-delay(0.25s); }
+		&:nth-child(2) .columns:nth-child(1) { @include animation-delay(0.5s); }
+		&:nth-child(2) .columns:nth-child(2) { @include animation-delay(0.75s); }
+	}
+}
+
+#hero-alt2 {
+	background: #333;
+	overflow: hidden;
+
+	& > .row {
+		max-width: 100%;
+
+		.columns {
+			padding: 0;
+			position: relative;
+
+			img { opacity: .5; @include transition(opacity 500ms ease); }
+
+			h5 {
+				position: absolute;
+				bottom: .5rem;
+				left: .5rem;
+				color: #fff;
+				font-weight: 100;
+				font-size: rem-calc(36px);
+				margin: 0;
+				padding: 0; }
+
+			&:hover img { opacity: .75; }
+		}
+
+		& .columns:nth-child(1):after { content: "+"; position: absolute; z-index: 1000; top: 50%; right: -1.6rem; margin-top: -4.5rem; color: #fff; font-weight: 100; font-size: rem-calc(88px); }
+		& .columns:nth-child(2) { @include animation-delay(0.25s); }
+		& .columns:nth-child(2):after { content: "+"; position: absolute; z-index: 1000; top: 50%; right: -1.6rem; margin-top: -4.5rem; color: #fff; font-weight: 100; font-size: rem-calc(88px); }
+		& .columns:nth-child(3) { @include animation-delay(0.5s); }
+		& .columns:nth-child(3):after { content: "="; position: absolute; z-index: 1000; top: 50%; right: -1.6rem; margin-top: -4.5rem; color: #fff; font-weight: 100; font-size: rem-calc(88px); }
+		& .columns:nth-child(4) { @include animation-delay(0.75s); }
+	}
+}
 
 #homepage-content {
 	padding: 3rem 0 0 0;
@@ -263,5 +332,13 @@ footer {
 @media screen and (min-width: 641px) {
 
 	#homepage-content .shrink { flex: 0 0 auto !important; }
+
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+	#video-hero aside hgroup h1 { font-size: rem-calc(72px); }
+	#video-hero aside hgroup h2 { font-size: rem-calc(48px); }
 
 }
