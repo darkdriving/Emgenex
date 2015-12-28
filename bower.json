@@ -20,5 +20,8 @@
     "test",
     "tests"
   ],
-  "private": true
+  "private": true,
+  "resolutions": {
+    "foundation-sites": "~6.1.1"
+  }
 }

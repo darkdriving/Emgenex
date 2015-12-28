@@ -52,7 +52,7 @@ body { background: #fff; }
 header {
 	padding: 2em 0;
 
-	img { width: 100%; max-width: 397px; }
+	img { width: 100%; max-width: 270px; }
 
 	nav {
 
@@ -89,6 +89,65 @@ header {
 	}
 }
 
+#video-hero {
+	position: relative;
+	overflow: hidden;
+	height: 90vh;
+	background: #333;
+
+	.nav-toggle { color: #fff; }
+
+	header { position: relative; z-index: 10; }
+
+	aside {
+		position: relative;
+		top: 40%;
+		z-index: 10;
+		@include transform(translateY(-50%));
+
+		hgroup {
+			margin: 0 0 1rem 0;
+			padding: 0;
+
+			h1 { font-weight: 100; font-size: rem-calc(120px); color: #fff; margin: 0; padding: 0; line-height: 1; }
+			h2 { font-weight: 100; font-size: rem-calc(76px); color: #fff; margin: 0; padding: 0; line-height: 1.1; }
+		}
+
+		p {
+			font-size: 1.2rem;
+			color: #fff;
+			font-weight: 300;
+			margin-bottom: 1.6rem;
+
+			&:last-child { margin-bottom: 0; }
+
+			a {
+				background: none;
+				color: #fff;
+				border: 1px solid #fff;
+				box-shadow: none;
+				text-shadow: none;
+				font-weight: 300;
+				@include transition(background 500ms ease);
+
+				&:hover { background: rgba(255,255,255,.25); }
+			}
+		}
+	}
+
+	video {
+		opacity: .3;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: 0;
+	}
+}
+
 #hero {
 	background: url('../img/hero-bg.jpg') no-repeat center center;
 	background-size: 100%;
@@ -108,6 +167,8 @@ header {
 	padding: 3rem 0 0 0;
 	background: $primary-color;
 
+	> .row { max-width: 980px; }
+
 	h2 { color: #fff; font-size: rem-calc(36px); font-weight: 300; margin-bottom: 3rem; }
 
 	h3 {
@@ -118,6 +179,8 @@ header {
 	p { color: rgba(255,255,255,.5); margin-bottom: rem-calc(6px); }
 
 	a { display: block; color: #fff; margin-bottom: 3rem; }
+
+	.shrink img { max-width: 120px; opacity: .6; }
 
 }
 
@@ -130,8 +193,75 @@ footer {
 
 // Animations and whatnots
 
-/* The animation code */
 @keyframes bgscale {
     0%   { background-size: 100%; }
     100% { background-size: 180%; }
+}
+
+
+@media screen and (max-width: 640px){
+
+	#overlay ul li a { font-size: rem-calc(20px); }
+	#tagline { display: none; }
+	#hero { animation-name: none; background-size: cover; }
+
+	#homepage-content {
+		padding: 2rem 0 0 0;
+		h2 { font-size: rem-calc(24px); margin-bottom: 1rem; }
+		.shrink img { max-width: 200px; opacity: .6; }
+		.customer-type { text-align: center; }
+	}
+
+	footer { font-size: rem-calc(12px); }
+
+	// video layout
+
+	#video-hero {
+		height: auto;
+		background: rgba(0,0,0,.65);
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: .4;
+			z-index: -1;
+			background: url('../media/poster.jpg') no-repeat center center;
+			background-size: cover;
+		}
+
+		aside {
+			top: auto;
+			@include transform(translateY(0));
+
+			hgroup {
+				margin: 1rem 0;
+				padding: 0;
+
+				h1 { font-size: rem-calc(48px); font-weight: 300; line-height: 1; }
+				h2 { font-size: rem-calc(24px); font-weight: 300; }
+			}
+
+			p {
+				font-size: rem-calc(16px);
+
+				&:last-child { margin-bottom: 1.6rem; }
+
+				a { font-size: rem-calc(16px); }
+			}
+		}
+
+		video { display: none; }
+	}
+
+
+}
+
+@media screen and (min-width: 641px) {
+
+	#homepage-content .shrink { flex: 0 0 auto !important; }
+
 }
