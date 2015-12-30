@@ -3287,6 +3287,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/media-queries.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/media-queries.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -3506,21 +3515,21 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/kit-files\/header-standard.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kit-files\/header-standard.kit",
+		"outputAbbreviatedPath": "\/header-standard.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/kit-files\/header.kit": {
 		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kit-files\/header.kit",
 		"outputAbbreviatedPath": "\/header.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/kit-files\/header3.kit": {
-		"fileType": 2048,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/kit-files\/header3.kit",
-		"outputAbbreviatedPath": "\/header3.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -3533,33 +3542,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/kit-files\/index2-alt.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/kit-files\/index2-alt.kit",
-		"outputAbbreviatedPath": "\/index2-alt.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/kit-files\/index2.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/kit-files\/index2.kit",
-		"outputAbbreviatedPath": "\/index2.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/kit-files\/index3.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/kit-files\/index3.kit",
-		"outputAbbreviatedPath": "\/index3.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/media\/poster.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3567,6 +3549,50 @@
 		"initialSize": 28545,
 		"inputAbbreviatedPath": "\/media\/poster.jpg",
 		"outputAbbreviatedPath": "\/media\/poster.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Original Media\/Death_to_stock_photography_weekend_work (6 of 10).jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 502521,
+		"inputAbbreviatedPath": "\/Original Media\/Death_to_stock_photography_weekend_work (6 of 10).jpg",
+		"outputAbbreviatedPath": "\/Original Media\/Death_to_stock_photography_weekend_work (6 of 10).jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Original Media\/genetic-testing-autism.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 320406,
+		"inputAbbreviatedPath": "\/Original Media\/genetic-testing-autism.jpg",
+		"outputAbbreviatedPath": "\/Original Media\/genetic-testing-autism.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Original Media\/ideas.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 163274,
+		"inputAbbreviatedPath": "\/Original Media\/ideas.jpg",
+		"outputAbbreviatedPath": "\/Original Media\/ideas.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Original Media\/url1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 208771,
+		"inputAbbreviatedPath": "\/Original Media\/url1.jpg",
+		"outputAbbreviatedPath": "\/Original Media\/url1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3619,15 +3645,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/scss\/nav.scss": {
+	"\/scss\/media-queries.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scss\/nav.scss",
-		"outputAbbreviatedPath": "\/css\/nav.css",
+		"inputAbbreviatedPath": "\/scss\/media-queries.scss",
+		"outputAbbreviatedPath": "\/css\/media-queries.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

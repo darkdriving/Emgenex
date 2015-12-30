@@ -373,15 +373,15 @@ $menu-expand-max: 6;
 // 23. Off-canvas
 // --------------
 
-$offcanvas-size: 250px;
-$offcanvas-background: $light-gray;
+$offcanvas-size: 400px;
+$offcanvas-background: #222;
 $offcanvas-zindex: -1;
 $offcanvas-transition-length: 0.5s;
-$offcanvas-transition-timing: ease;
+$offcanvas-transition-timing: ease-in-out;
 $offcanvas-fixed-reveal: true;
-$offcanvas-exit-background: rgba($white, 0.25);
+$offcanvas-exit-background: none;
 $maincontent-class: 'off-canvas-content';
-$maincontent-shadow: 0 0 10px rgba($black, 0.5);
+$maincontent-shadow: none;
 
 // 24. Orbit
 // ---------

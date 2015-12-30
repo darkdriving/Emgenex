@@ -1,1 +1,1 @@
-{"version":3,"sources":["../scripts.js"],"names":["$","document","foundation","click","toggleClass"],"mappings":"AAAAA,EAAEC,UAAUC,aAEZF,EAAE,WACEA,EAAE,eAAeG,MAAM,WAEjB,MADAH,GAAE,QAAQI,YAAY,aACf","file":"scripts-min.js"}
+{"version":3,"sources":["../scripts.js"],"names":["$","document","foundation"],"mappings":"AAAAA,EAAEC,UAAUC,aAEZF,EAAE","file":"scripts-min.js"}
