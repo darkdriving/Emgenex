@@ -2807,6 +2807,13 @@ nav[role="main"] ul {
       transition: color 500ms ease; }
       nav[role="main"] ul li a:hover {
         color: gray; }
+    nav[role="main"] ul li.title {
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      color: gray;
+      border-bottom: 1px solid #404040; }
     nav[role="main"] ul li.separator {
       border-bottom: 1px solid #404040;
       height: 1px;
@@ -2817,13 +2824,14 @@ nav[role="main"] ul {
       margin-bottom: 0.75rem; }
 
 #tagline {
-  padding: 2rem 0;
+  padding: 1.2rem 0;
   background: #145ea8; }
   #tagline p {
     color: #fff;
     font-size: 3.75rem;
     font-weight: 300;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    line-height: 1.1; }
     #tagline p:first-child {
       font-size: 2.25rem;
       line-height: 1.2; }
@@ -2871,18 +2879,6 @@ nav[role="main"] ul {
       margin-bottom: 1.6rem; }
       #video-hero aside p:last-child {
         margin-bottom: 0; }
-      #video-hero aside p a {
-        background: none;
-        color: #fff;
-        border: 1px solid #fff;
-        box-shadow: none;
-        text-shadow: none;
-        font-weight: 300;
-        -webkit-transition: background 500ms ease;
-        -moz-transition: background 500ms ease;
-        transition: background 500ms ease; }
-        #video-hero aside p a:hover {
-          background: rgba(255, 255, 255, 0.25); }
   #video-hero video {
     opacity: .3;
     position: absolute;
@@ -2894,27 +2890,106 @@ nav[role="main"] ul {
     min-height: 100%;
     z-index: 0; }
 
-#homepage-content {
+#hero {
+  position: relative;
+  overflow: hidden;
+  background: #fff url("../img/hero-bg.jpg") no-repeat center center;
+  background-size: cover; }
+  #hero p {
+    font-weight: 300;
+    font-size: 2.375rem;
+    color: #fff;
+    margin: 2rem 0;
+    padding: 0;
+    line-height: 1.1; }
+    #hero p.icon-text {
+      font-size: 2.25rem;
+      font-weight: 300;
+      margin-top: 0;
+      color: #111; }
+  #hero a {
+    margin-bottom: 2rem; }
+
+#whitespace-hero {
+  padding: 18vh 0;
+  position: relative;
+  background: -webkit-linear-gradient(rgba(252, 175, 97, 0.75), rgba(191, 54, 69, 0.9)), url("../img/whitespace-bg.jpg");
+  background: linear-gradient(rgba(252, 175, 97, 0.75), rgba(191, 54, 69, 0.9)), url("../img/whitespace-bg.jpg");
+  background-size: cover; }
+  #whitespace-hero h2 {
+    font-weight: 300;
+    font-size: 3rem;
+    color: #fff;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    line-height: 1.1; }
+  #whitespace-hero p {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    line-height: 1.2; }
+
+#provider-icons {
+  overflow: hidden; }
+  #provider-icons > .row {
+    max-width: 100%; }
+  #provider-icons > .row > .columns {
+    border-right: 1px solid #eee;
+    padding: 2rem 0;
+    text-align: center; }
+    #provider-icons > .row > .columns img {
+      max-width: 140px;
+      margin-bottom: 1rem; }
+    #provider-icons > .row > .columns h3 {
+      font-weight: 300;
+      color: #145ea8; }
+    #provider-icons > .row > .columns p {
+      font-weight: 300;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+      #provider-icons > .row > .columns p a {
+        display: block;
+        font-weight: 400;
+        margin-top: 1rem; }
+    #provider-icons > .row > .columns:last-child {
+      border-right: 0; }
+
+#hero-button {
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+  box-shadow: none;
+  text-shadow: none;
+  font-weight: 300;
+  -webkit-transition: background 500ms ease;
+  -moz-transition: background 500ms ease;
+  transition: background 500ms ease; }
+  #hero-button:hover {
+    background: rgba(255, 255, 255, 0.25); }
+
+#patient-types-large {
   padding: 3rem 0 0 0;
   background: #145ea8; }
-  #homepage-content > .row {
+  #patient-types-large > .row {
     max-width: 980px; }
-  #homepage-content h2 {
+  #patient-types-large h2 {
     color: #fff;
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: 3rem; }
-  #homepage-content h3 {
+  #patient-types-large h3 {
     color: #fff;
     font-weight: 300; }
-  #homepage-content p {
+  #patient-types-large p {
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 0.375rem; }
-  #homepage-content a {
+  #patient-types-large a {
     display: block;
     color: #fff;
     margin-bottom: 3rem; }
-  #homepage-content .shrink img {
+  #patient-types-large .shrink img {
     max-width: 120px;
     opacity: .6; }
 
@@ -2933,15 +3008,15 @@ footer {
   #hero {
     animation-name: none;
     background-size: cover; }
-  #homepage-content {
+  #patient-types-large {
     padding: 2rem 0 0 0; }
-    #homepage-content h2 {
+    #patient-types-large h2 {
       font-size: 1.5rem;
       margin-bottom: 1rem; }
-    #homepage-content .shrink img {
+    #patient-types-large .shrink img {
       max-width: 200px;
       opacity: .6; }
-    #homepage-content .customer-type {
+    #patient-types-large .customer-type {
       text-align: center; }
   footer {
     font-size: 0.75rem; }
@@ -2983,10 +3058,15 @@ footer {
         #video-hero aside p a {
           font-size: 1rem; }
     #video-hero video {
-      display: none; } }
+      display: none; }
+  #whitespace-hero {
+    padding: 5vh 0; }
+  #provider-icons > .row > .columns {
+    border-bottom: 1px solid #ccc; } }
 
 @media screen and (min-width: 641px) {
-  #homepage-content .shrink {
+  /* Forces the shrink class to work on displays larger than iPhone 6 */
+  .medium-unstack .shrink {
     flex: 0 0 auto !important; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {

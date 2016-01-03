@@ -6,7 +6,7 @@
 	#tagline { display: none; }
 	#hero { animation-name: none; background-size: cover; }
 
-	#homepage-content {
+	#patient-types-large {
 		padding: 2rem 0 0 0;
 		h2 { font-size: rem-calc(24px); margin-bottom: 1rem; }
 		.shrink img { max-width: 200px; opacity: .6; }
@@ -58,12 +58,16 @@
 		video { display: none; }
 	}
 
+	#whitespace-hero { padding: 5vh 0; }
+
+	#provider-icons > .row > .columns { border-bottom: 1px solid #ccc; }
 
 }
 
 @media screen and (min-width: 641px) {
 
-	#homepage-content .shrink { flex: 0 0 auto !important; }
+	/* Forces the shrink class to work on displays larger than iPhone 6 */
+	.medium-unstack .shrink { flex: 0 0 auto !important; }
 
 }
 

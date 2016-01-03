@@ -76,6 +76,8 @@ nav[role="main"] {
 				&:hover { color: scale-color(#fff, $lightness: -50%); }
 			}
 
+			&.title { font-size: rem-calc(16px); text-transform: uppercase; margin-left: 2rem; margin-right: 2rem; color: scale-color(#fff, $lightness: -50%); border-bottom: 1px solid #404040; }
+
 			&.separator { border-bottom: 1px solid #404040; height: 1px; margin-left: 2rem; margin-right: 2rem; }
 
 			&.secondary {
@@ -87,7 +89,7 @@ nav[role="main"] {
 }
 
 #tagline {
-	padding: 2rem 0;
+	padding: 1.2rem 0;
 	background: $primary-color;
 
 	p {
@@ -95,6 +97,7 @@ nav[role="main"] {
 		font-size: rem-calc(60px);
 		font-weight: 300;
 		margin-bottom: 0;
+		line-height: 1.1;
 
 		&:first-child { font-size: rem-calc(36px); line-height: 1.2; }
 	}
@@ -131,18 +134,6 @@ nav[role="main"] {
 			margin-bottom: 1.6rem;
 
 			&:last-child { margin-bottom: 0; }
-
-			a {
-				background: none;
-				color: #fff;
-				border: 1px solid #fff;
-				box-shadow: none;
-				text-shadow: none;
-				font-weight: 300;
-				@include transition(background 500ms ease);
-
-				&:hover { background: rgba(255,255,255,.25); }
-			}
 		}
 	}
 
@@ -159,7 +150,76 @@ nav[role="main"] {
 	}
 }
 
-#homepage-content {
+#hero {
+	position: relative;
+	overflow: hidden;
+	background: #fff url('../img/hero-bg.jpg') no-repeat center center;
+	background-size: cover;
+
+	p {
+		font-weight: 300;
+		font-size: rem-calc(38px);
+		color: #fff;
+		margin: 2rem 0;
+		padding: 0;
+		line-height: 1.1;
+
+		&.icon-text { font-size: rem-calc(36px); font-weight: 300; margin-top: 0; color: #111; }
+	}
+
+	a { margin-bottom: 2rem; }
+}
+
+#whitespace-hero {
+	padding: 18vh 0;
+	position: relative;
+	@include background(linear-gradient(rgba(252, 175, 97, .75), rgba(191, 54, 69, .9)), url("../img/whitespace-bg.jpg"));
+	background-size: cover;
+
+	h2 { font-weight: 300; font-size: rem-calc(48px); color: #fff; margin: 0 0 1rem 0; padding: 0; line-height: 1.1; }
+	p { font-weight: 300; font-size: rem-calc(24px); color: #fff; margin: 0 0 2rem 0; padding: 0; line-height: 1.2; }
+}
+
+#provider-icons {
+	overflow: hidden;
+
+	& > .row { max-width: 100%; }
+
+	& > .row > .columns {
+		border-right: 1px solid #eee;
+		padding: 2rem 0;
+		text-align: center;
+
+		img { max-width: 140px; margin-bottom: 1rem; }
+
+		h3 { font-weight: 300; color: $primary-color; }
+
+		p {
+			font-weight: 300;
+			margin-left: 2rem;
+			margin-right: 2rem;
+
+			a { display: block; font-weight: 400; margin-top: 1rem; }
+		}
+
+		&:last-child { border-right: 0; }
+	}
+
+}
+
+#hero-button {
+	background: none;
+	color: #fff;
+	border: 1px solid #fff;
+	box-shadow: none;
+	text-shadow: none;
+	font-weight: 300;
+	@include transition(background 500ms ease);
+
+	&:hover { background: rgba(255,255,255,.25); }
+}
+
+#patient-types-large {
 	padding: 3rem 0 0 0;
 	background: $primary-color;
 

@@ -13,34 +13,17 @@
 
 	<div class="off-canvas-wrapper">
 		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-			<div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
-				<nav role="main">
-					<ul>
-						<li><a href="#">Business Operations</a></li>
-						<li><a href="#">In-office Diagnostics</a></li>
-						<li><a href="#">Clinical Network</a></li>
-						<li><a href="#">Pharmacogenetics Testing</a></li>
-						<li><a href="#">Rx Compounding</a></li>
-						<li><a href="#">Health IT</a></li>
 
-						<li class="separator"></li>
-
-						<li class="secondary"><a href="#">About Us</a></li>
-						<li class="secondary"><a href="#">Privacy Policy</a></li>
-						<li class="secondary"><a href="#">Terms &amp; Conditions</a></li>
-						<li class="secondary"><a href="#">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
+			<!-- @import "nav.kit" -->
 
 			<!-- Start Main Content -->
 
-			<div class="off-canvas-content" data-off-canvas-content>
+			<main class="off-canvas-content" data-off-canvas-content>
 				<section id="video-hero">
 					<header class="animated fadeInDown">
 						<div class="row">
 							<div class="columns">
-								<img src="img/logo-white.png">
+								<a href="index.html"><img src="img/logo-white.png"></a>
 							</div>
 							<div class="columns shrink text-right">
 								<a href="#" class="nav-toggle" data-toggle="offCanvas">Menu <i class="fa fa-bars"></i></span></a>
@@ -55,7 +38,7 @@
 									<h2>To The Right Outcomes</h2>
 								</hgroup>
 								<p>Enter the era of better prescribing and better medicine</p>
-								<p><a href="#" class="large hollow button">Learn More</a>
+								<p><a href="#" class="large hollow button" id="hero-button">Learn More</a>
 							</div>
 						</div>
 					</aside>
