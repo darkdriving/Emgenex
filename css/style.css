@@ -2937,6 +2937,7 @@ nav[role="main"] ul {
     max-width: 100%; }
   #provider-icons > .row > .columns {
     border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     padding: 2rem 0;
     text-align: center; }
     #provider-icons > .row > .columns img {

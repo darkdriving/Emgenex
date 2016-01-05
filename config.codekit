@@ -3427,6 +3427,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/sciencetech.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 607252,
+		"inputAbbreviatedPath": "\/img\/sciencetech.jpg",
+		"outputAbbreviatedPath": "\/img\/sciencetech.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/whitespace-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
