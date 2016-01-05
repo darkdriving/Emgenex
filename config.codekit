@@ -3306,6 +3306,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/gsl.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16723,
+		"inputAbbreviatedPath": "\/img\/gsl.jpg",
+		"outputAbbreviatedPath": "\/img\/gsl.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/hero-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
