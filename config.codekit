@@ -3449,6 +3449,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/tox.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 74038,
+		"inputAbbreviatedPath": "\/img\/tox.jpg",
+		"outputAbbreviatedPath": "\/img\/tox.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/whitespace-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

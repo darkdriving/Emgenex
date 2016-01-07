@@ -2913,8 +2913,8 @@ nav[role="main"] ul {
 #whitespace-hero {
   padding: 18vh 0;
   position: relative;
-  background: -webkit-linear-gradient(rgba(252, 175, 97, 0.75), rgba(191, 54, 69, 0.9)), url("../img/whitespace-bg.jpg");
-  background: linear-gradient(rgba(252, 175, 97, 0.75), rgba(191, 54, 69, 0.9)), url("../img/whitespace-bg.jpg");
+  background: -webkit-linear-gradient(rgba(51, 51, 51, 0.75), rgba(17, 17, 17, 0.9)), url("../img/whitespace-bg.jpg");
+  background: linear-gradient(rgba(51, 51, 51, 0.75), rgba(17, 17, 17, 0.9)), url("../img/whitespace-bg.jpg");
   background-size: cover; }
   #whitespace-hero h2 {
     font-weight: 300;
@@ -2956,6 +2956,22 @@ nav[role="main"] ul {
         margin-top: 1rem; }
     #provider-icons > .row > .columns:last-child {
       border-right: 0; }
+
+.widescreen-explainer .imagery {
+  max-width: 60%; }
+
+.widescreen-explainer .explainer {
+  max-width: 40%;
+  padding: 4rem 4rem; }
+  .widescreen-explainer .explainer h3 {
+    font-weight: 300;
+    color: #145ea8; }
+  .widescreen-explainer .explainer p {
+    font-weight: 300; }
+    .widescreen-explainer .explainer p a {
+      display: block;
+      font-weight: 400;
+      margin-top: 1rem; }
 
 #hero-button {
   background: none;
