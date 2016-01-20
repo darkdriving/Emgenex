@@ -3295,6 +3295,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/bg-providers-alt.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 132215,
+		"inputAbbreviatedPath": "\/img\/bg-providers-alt.jpg",
+		"outputAbbreviatedPath": "\/img\/bg-providers-alt.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/bg-providers.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3346,6 +3357,39 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/img\/hero-icons.png",
 		"outputAbbreviatedPath": "\/img\/hero-icons.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icon-practice-management-onpage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23065,
+		"inputAbbreviatedPath": "\/img\/icon-practice-management-onpage.png",
+		"outputAbbreviatedPath": "\/img\/icon-practice-management-onpage.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icon-prescribing-solutions-onpage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 94095,
+		"inputAbbreviatedPath": "\/img\/icon-prescribing-solutions-onpage.png",
+		"outputAbbreviatedPath": "\/img\/icon-prescribing-solutions-onpage.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icon-technology-solutions-onpage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 38853,
+		"inputAbbreviatedPath": "\/img\/icon-technology-solutions-onpage.png",
+		"outputAbbreviatedPath": "\/img\/icon-technology-solutions-onpage.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3556,15 +3600,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/kit-files\/providers-dark.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/kit-files\/providers-dark.kit",
-		"outputAbbreviatedPath": "\/providers-dark.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/kit-files\/providers.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -3645,15 +3680,6 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/providers-alt.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/providers-dark.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/providers-dark.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
