@@ -18,7 +18,7 @@
 
     this._init();
 
-    Foundation.registerPlugin(this, 'Magellan');
+    Foundation.registerPlugin(this);
   }
 
   /**

@@ -23,7 +23,7 @@
 
     this._init();
 
-    Foundation.registerPlugin(this, 'AccordionMenu');
+    Foundation.registerPlugin(this);
     Foundation.Keyboard.register('AccordionMenu', {
       'ENTER': 'toggle',
       'SPACE': 'toggle',
@@ -138,7 +138,7 @@
           return;
         }
       });
-      Foundation.Keyboard.handleKey(e, 'AccordionMenu', {
+      Foundation.Keyboard.handleKey(e, _this, {
         open: function() {
           if ($target.is(':hidden')) {
             _this.down($target);

@@ -57,19 +57,7 @@
   $columns: $grid-column-count,
   $gutter: $grid-column-gutter
 ) {
-  @if $gutter != null {
-    $gutter: rem-calc($gutter) / 2;
-  }
-  @else {
-    @each $breakpoint, $gutter in $grid-column-responsive-gutter {
-      $padding: rem-calc($gutter) / 2;
-      
-      @include breakpoint($breakpoint) {
-        padding-left: $padding;
-        padding-right: $padding;
-      }
-    }
-  }
+  $gutter: rem-calc($gutter) / 2;
 
   @include grid-column-size($columns);
   float: $global-left;
@@ -91,7 +79,7 @@
 ) {
   @include grid-row;
   @include grid-column($gutter: $gutter);
-
+  
   &,
   &:last-child {
     float: none;

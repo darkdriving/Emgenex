@@ -19,7 +19,7 @@
     this.options = $.extend({}, Tabs.defaults, this.$element.data(), options);
 
     this._init();
-    Foundation.registerPlugin(this, 'Tabs');
+    Foundation.registerPlugin(this);
     Foundation.Keyboard.register('Tabs', {
       'ENTER': 'open',
       'SPACE': 'open',
@@ -183,7 +183,7 @@
       });
 
       // handle keyboard event with keyboard util
-      Foundation.Keyboard.handleKey(e, 'Tabs', {
+      Foundation.Keyboard.handleKey(e, _this, {
         open: function() {
           $element.find('[role="tab"]').focus();
           _this._handleTabChange($element);

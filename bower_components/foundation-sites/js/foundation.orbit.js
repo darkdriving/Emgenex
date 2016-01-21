@@ -11,7 +11,7 @@
   /**
    * Creates a new instance of an orbit carousel.
    * @class
-   * @param {jQuery} element - jQuery object to make into an Orbit Carousel.
+   * @param {jQuery} element - jQuery object to make into an accordion menu.
    * @param {Object} options - Overrides to the default plugin settings.
    */
   function Orbit(element, options){
@@ -20,7 +20,7 @@
 
     this._init();
 
-    Foundation.registerPlugin(this, 'Orbit');
+    Foundation.registerPlugin(this);
     Foundation.Keyboard.register('Orbit', {
         'ltr': {
           'ARROW_RIGHT': 'next',
@@ -310,7 +310,7 @@
 
     this.$wrapper.add(this.$bullets).on('keydown.zf.orbit', function(e){
       // handle keyboard event with keyboard util
-      Foundation.Keyboard.handleKey(e, 'Orbit', {
+      Foundation.Keyboard.handleKey(e, _this, {
         next: function() {
           _this.changeSlide(true);
         },
