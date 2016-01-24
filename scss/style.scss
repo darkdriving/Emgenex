@@ -139,27 +139,27 @@ nav[role="main"] {
 	}
 }
 
+#tagline {
+	padding: 1.4rem 0;
+	background: $primary-color;
+
+	p {
+		color: #fff;
+		font-size: rem-calc(48px);
+		font-weight: 300;
+		margin-bottom: 0;
+		margin-top: .5rem;
+		line-height: 1;
+
+		&:first-child { font-size: rem-calc(36px); margin: 0; }
+	}
+}
+
 #hero {
 	position: relative;
 	overflow: hidden;
 	background: #fff url('../img/bg-providers.jpg') no-repeat center center;
 	background-size: cover;
-
-	#tagline {
-		padding: 1.6rem 0;
-		background: rgba(20,94,168,.5);
-
-		p {
-			color: #fff;
-			font-size: rem-calc(48px);
-			font-weight: 300;
-			margin-bottom: 0;
-			margin-top: .5rem;
-			line-height: 1.1;
-
-			&:first-child { font-size: rem-calc(36px); line-height: 1.2; margin: 0; }
-		}
-	}
 
 	p {
 		font-weight: 100;
@@ -178,7 +178,7 @@ nav[role="main"] {
 }
 
 #sub-hero {
-	background: $primary-color;
+	background: rgba(20, 94, 168,.8);
 	padding: 3rem 0;
 	color: #fff;
 
