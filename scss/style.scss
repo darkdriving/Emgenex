@@ -55,7 +55,7 @@ header {
 	img { width: 100%; max-width: 270px; }
 }
 
-#offCanvas { height: 200vh; }
+#offCanvas { height: 900vh; }
 
 nav[role="main"] {
 	ul {
@@ -330,7 +330,7 @@ hr.divider { border: 0; height: 1px; background: $primary-color; }
 		&:last-child { border: 0; }
 	}
 
-	img { margin: 0; max-width: 160px; opacity: .6; }
+	img { margin: 1rem 0; max-height: 120px; opacity: .6; }
 
 	h3 { color: #fff; font-weight: 300; font-size: rem-calc(24px); margin: 0; padding: 0; }
 

@@ -4039,7 +4039,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 421979,
+		"initialSize": 22355,
 		"inputAbbreviatedPath": "\/img\/bg-providers.jpg",
 		"outputAbbreviatedPath": "\/img\/bg-providers.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -4272,7 +4272,7 @@
 		"outputAbbreviatedPath": "\/js\/min\/scripts-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
+		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/kit-files\/footer.kit": {
@@ -4468,7 +4468,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		}
 	},
 "hooks": [
